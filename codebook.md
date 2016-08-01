@@ -7,11 +7,11 @@ The original data consists of various files, that you can find here: https://d39
 It is all data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
 In essence, we have the following files:
-X_train.txt and X_test.txt, which both contain all kinds of movement variables
-features.txt contains the names of the activities, "belonging" to the movement variables in X_train.txt and X_test.txt
-y_train.txt and y_test.txt, which both contain which type of activity was undertaken
-activity_labels.txt, contains the names of the activities, "belonging" to the numbers in y_train.txt and y_test.txt
-subject_train.txt and subject_test.txt, which both contact identifiers for the subjects 
+- X_train.txt and X_test.txt, which both contain all kinds of movement variables
+- features.txt contains the names of the activities, "belonging" to the movement variables in X_train.txt and X_test.txt
+- y_train.txt and y_test.txt, which both contain which type of activity was undertaken
+- activity_labels.txt, contains the names of the activities, "belonging" to the numbers in y_train.txt and y_test.txt
+- subject_train.txt and subject_test.txt, which both contact identifiers for the subjects 
 
 Some more info about the movement variables:
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
