@@ -31,55 +31,55 @@ Using all original files mentioned above, I created a tidy dataset. Which steps 
 
 Xtidy.txt has 81 columns (and is tab-delimited)
 
-1 subject : Identifier for the subject (1:30)
-2 activity : The activity undertaken by the subject (one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
-3 tBodyAcc-mean()-X
-4 tBodyAcc-mean()-Y
-5 tBodyAcc-mean()-Z
-6 tBodyAcc-std()-X
-7 tBodyAcc-std()-Y
-8 tBodyAcc-std()-Z
-9 tGravityAcc-mean()-X
-10 tGravityAcc-mean()-Y
-11 tGravityAcc-mean()-Z
-12 tGravityAcc-std()-X
-13 tGravityAcc-std()-Y
-14 tGravityAcc-std()-Z
-15 tBodyAccJerk-mean()-X
-16 tBodyAccJerk-mean()-Y
-17 tBodyAccJerk-mean()-Z
-18 tBodyAccJerk-std()-X
-19 tBodyAccJerk-std()-Y
-20 tBodyAccJerk-std()-Z
-21 tBodyGyro-mean()-X
-22 tBodyGyro-mean()-Y
-23 tBodyGyro-mean()-Z
-24 tBodyGyro-std()-X
-25 tBodyGyro-std()-Y
-26 tBodyGyro-std()-Z
-27 tBodyGyroJerk-mean()-X
-28 tBodyGyroJerk-mean()-Y
-29 tBodyGyroJerk-mean()-Z
-30 tBodyGyroJerk-std()-X
-31 tBodyGyroJerk-std()-Y
-32 tBodyGyroJerk-std()-Z
-33 tBodyAccMag-mean()
-34 tBodyAccMag-std()
-35 tGravityAccMag-mean()
-36 tGravityAccMag-std()
-37 tBodyAccJerkMag-mean()
-38 tBodyAccJerkMag-std()
-39 tBodyGyroMag-mean()
-40 tBodyGyroMag-std()
-41 tBodyGyroJerkMag-mean()
-42 tBodyGyroJerkMag-std()
-43 fBodyAcc-mean()-X
-44 fBodyAcc-mean()-Y
-45 fBodyAcc-mean()-Z
-46 fBodyAcc-std()-X
-47 fBodyAcc-std()-Y
-48 fBodyAcc-std()-Z
-49 fBodyAcc-meanFreq()-X
+- 1 subject : Identifier for the subject (1:30)
+- 2 activity : The activity undertaken by the subject (one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+- 3 tBodyAccmeanX
+- 4 tBodyAccmeanY
+5 tBodyAccmeanZ
+6 tBodyAccstdX
+7 tBodyAccstdY
+8 tBodyAccstdZ
+9 tGravityAccmeanX
+10 tGravityAccmeanY
+11 tGravityAccmeanZ
+12 tGravityAccstdX
+13 tGravityAccstdY
+14 tGravityAccstdZ
+15 tBodyAccJerkmeanX
+16 tBodyAccJerkmeanY
+17 tBodyAccJerkmeanZ
+18 tBodyAccJerkstdX
+19 tBodyAccJerkstdY
+20 tBodyAccJerkstdZ
+21 tBodyGyromeanX
+22 tBodyGyromeanY
+23 tBodyGyromeanZ
+24 tBodyGyrostdX
+25 tBodyGyrostdY
+26 tBodyGyrostdZ
+27 tBodyGyroJerkmeanX
+28 tBodyGyroJerkmeanY
+29 tBodyGyroJerkmeanZ
+30 tBodyGyroJerkstdX
+31 tBodyGyroJerkstdY
+32 tBodyGyroJerkstdZ
+33 tBodyAccMagmean
+34 tBodyAccMagstd
+35 tGravityAccMagmean
+36 tGravityAccMagstd
+37 tBodyAccJerkMagmean
+38 tBodyAccJerkMagstd
+39 tBodyGyroMagmean
+40 tBodyGyroMagstd
+41 tBodyGyroJerkMagmean
+42 tBodyGyroJerkMagstd
+43 fBodyAccmeanX
+44 fBodyAccmeanY
+45 fBodyAccmeanZ
+46 fBodyAccstdX
+47 fBodyAccstdY
+48 fBodyAccstdZ
+49 fBodyAccmeanFreqX
 50 fBodyAcc-meanFreq()-Y
 51 fBodyAcc-meanFreq()-Z
 52 fBodyAccJerk-mean()-X
