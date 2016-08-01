@@ -1,24 +1,38 @@
 # Code Book
-Initial Data
 
-For the data used in this project, see the README.txt found in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
-Data Wrangling
+## Original datasets
 
-The data provided in this original project are tidied into a principal research dataset of interest here, contained in the data frame "activity.frame", in the run_analysis.R script provided here.
+The original data consists of various files, that you can find here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The "activity.frame" data frame is produced by performing the following transformations:
+It is all data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-    Combine data from the original training and test datasets into one dataset.
-    Extract only those features from the original dataset that are a mean or standard deviation measure (mean or std in feature name).
-    Add subject ids (numbers 1-30) to the single data frame.
-    Add activities, by name, to the single data frame.
+In essence, we have the following files:
+X_train.txt and X_test.txt, which both contain all kinds of movement variables
+features.txt contains the names of the activities, "belonging" to the movement variables in X_train.txt and X_test.txt
+y_train.txt and y_test.txt, which both contain which type of activity was undertaken
+activity_labels.txt, contains the names of the activities, "belonging" to the numbers in y_train.txt and y_test.txt
+subject_train.txt and subject_test.txt, which both contact identifiers for the subjects 
 
-Clean Data Columns
+Some more info about the movement variables:
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-The resulting data frame has 81 columns:
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-1 subject.id : The subject ID, an integer in the range 1:30
-2 activity : The activity performed by the subject
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+## Creating a tidy dataset
+
+Using all original files mentioned above, I created a tidy dataset. Which steps I took, and why I did so, is described in README.md
+
+## Variable definitions of Xtidy.txt
+
+Xtidy.txt has 81 columns (and is tab-delimited)
+
+1 subject : Identifier for the subject (1:30)
+2 activity : The activity undertaken by the subject (one of WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 3 tBodyAcc-mean()-X
 4 tBodyAcc-mean()-Y
 5 tBodyAcc-mean()-Z
