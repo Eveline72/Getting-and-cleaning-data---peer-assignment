@@ -1,4 +1,4 @@
-Code Book
+# Code Book
 Initial Data
 
 For the data used in this project, see the README.txt found in http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
