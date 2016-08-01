@@ -72,6 +72,10 @@ colnames(Xnw)[1] <- "subject"
 Xmelt <- melt(Xnw, id.vars = c("subject","activity"))
 Xtidy <- dcast(Xmelt, subject + activity ~ ... ,mean)
 
+## Cleanup the column names of Xtidy, so that a number of unnecessary dots are removed
+
+colnames(Xtidy) <- gsub("\\.","",colnames(Xtidy))
+
 ## Write Xtidy to a txt file so we can send it to Coursera
 
 write.table(Xtidy, "xtidy.txt", sep="\t") 
